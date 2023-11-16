@@ -70,3 +70,23 @@ animal(prairie_dog, small, greaterthan7, large_cage_with_play_area, moderate, hi
 
 /*Reptiles*/
 
+animal(leopard_gecko, small, greaterthan10, terrarium, low, low, moderate, low).
+animal(bearded_dragon, medium, greaterthan7, terrarium, moderate, moderate, high, moderate).
+animal(corn_snake, medium, greaterthan10, terrarium, moderate, low, moderate, low).
+animal(ball_python, medium, greaterthan10, terrarium, moderate, low, moderate, low).
+animal(russian_tortoise, medium, greaterthan20, terrarium_with_outdoor_access, moderate, low, high, low).
+animal(red_eared_slider_turtle, medium, greaterthan10, aquarium_with_land_area, moderate, moderate, high, low).
+animal(crested_gecko, small, greaterthan10, terrarium, moderate, moderate, moderate, low).
+animal(green_iguana, large, greaterthan13, large_terrarium_with_climbing_area, high, moderate, high, moderate).
+animal(blue_tongued_skink, medium, greaterthan10, terrarium, moderate, moderate, moderate, low).
+animal(boa_constrictor, large, greaterthan13, large_terrarium, high, low, high, low).
+animal(chameleon, small, greaterthan3, terrarium, high, moderate, high, low).
+animal(king_snake, medium, greaterthan10, terrarium, moderate, low, moderate, low).
+animal(milk_snake, small, greaterthan10, terrarium, low, low, moderate, low).
+animal(anole, small, greaterthan3, terrarium, low, high, moderate, low).
+animal(monitor_lizard, large, greaterthan10, large_terrarium_with_outdoor_access, high, high, high, moderate).
+animal(turtle, medium, greaterthan10, aquarium_with_land_area, moderate, low, high, low).
+animal(gecko, small, greaterthan10, terrarium, low, moderate, moderate, low).
+animal(snapping_turtle, large, greaterthan13, large_aquarium_with_land_area, high, low, high, low).
+animal(tegu, large, greaterthan10, large_terrarium_with_outdoor_access, high, high, high, moderate).
+animal(uromastyx, medium, greaterthan10, terrarium, moderate, low, moderate, low).
