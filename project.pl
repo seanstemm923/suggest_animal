@@ -138,6 +138,12 @@ pet(snapping_turtle, reptile, large, average_lifespan(30), [indoor, outdoor], hi
 pet(tegu, reptile, large, average_lifespan(15), [indoor, outdoor], high, high, high, moderate).
 pet(uromastyx, reptile, medium, average_lifespan(15), [indoor], moderate, low, moderate, low).
 
+% Utility predicate to ask for continuation or termination
+continue_or_end :-
+    writeln('Do you want to continue? (yes/no): '),
+    read(Continue),
+    (Continue = no -> writeln('Program terminated.'), abort ; true).
+
 % Recommendation rule
 recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet) :-
     pet(Pet, PetClassification, PetSize, average_lifespan(AvgLifespan), PetLivingspaces, PetBudget, PetActivity, PetNoise, PetMaintenance),
@@ -152,10 +158,9 @@ recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Ac
 
 % Start of program
 main :-
-    writeln('Write a period after each input. If an option is (amphibian) for example, input: amphibian.'), 
     writeln('If you have no preference for a question, input: n. The less preferences you have, the higher likelihood of getting results'), 
     
-    write('Type what classification of animal you are interested in (no, amphibian, bird, fish, mammal, reptile): '),
+    write('Type what classification of animal you are interested in (n, amphibian, bird, fish, mammal, reptile): '),
     read(Classification), 
     
     write('Type what size of animal you are interested in (n, small, medium, large): '), 
@@ -183,6 +188,6 @@ main :-
 	sort(Duplicates, Pets),
     (Pets = [] -> writeln('Sorry, there were no matches found.');
     write('Based on your preferences, these pets are recommended: '),
-    write(Pets)), nl.
+    write(Pets)), nl, continue_or_end, nl.
 
 :- main.
