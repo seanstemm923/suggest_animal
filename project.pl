@@ -1,12 +1,18 @@
-pet(dog, mammal, medium, [greaterthan10], outdoor, expensive, high, moderate).
-pet(cat, mammal, small, [greaterthan13], indoor, cheap, moderate, low).
-pet(goldfish, fish, small, [lessthan0], indoor, cheap, low, low).
-pet(parrot, bird, small, [greaterthan13], indoor, expensive, high, moderate).
-pet(turtle, reptile, small, [greaterthan10], indoor, cheap, low, low).
+% Pet facts
+pet(dog, mammal, medium, average_lifespan(10), outdoor, expensive, high, moderate, high).
+pet(cat, mammal, small, average_lifespan(13), indoor, cheap, moderate, low, moderate).
+pet(goldfish, fish, small, average_lifespan(5), indoor, cheap, low, low, low).
+pet(parrot, bird, small, average_lifespan(20), indoor, expensive, high, moderate, moderate).
+pet(turtle, reptile, small, average_lifespan(40), indoor, cheap, low, low, moderate).
 
-recommend_pet(Classification, Size, Lifespan, Livingspace, Budget, Activity, Noise, Pet) :-
-    pet(Pet, Classification, Size, LifespanList, Livingspace, Budget, Activity, Noise),
-    member(Lifespan, LifespanList).
+% Recommendation rule
+recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet) :-
+    pet(Pet, Classification, Size, average_lifespan(AvgLifespan), Livingspace, PetBudget, Activity, Noise, PetMaintenance),
+    AvgLifespan >= UserMinLifespan,
+    (UserBudget >= 100 ; PetBudget = cheap),
+    Maintenance = PetMaintenance.
+
+% Start of program
 start :-
     write('Type what classification of animal you are interested in (amphibian, bird, fish, mammal, reptile): '),
     read(Classification), 
@@ -15,34 +21,29 @@ start :-
     read(Size), 
     
     write('What are the minimum number of years you wish to spend with your future pet? '), 
-    read(Years), 
-    get_lifespan(Years, Lifespan), 
+    read(UserMinLifespan), 
     
     write('Do you want an indoor or outdoor pet? '), 
     read(Livingspace), 
     
-    write('What is your budget: '), 
-	read(Dollars), 
-    get_budget(Dollars, Budget), 
+    write('What is your budget in amount of dollars: '), 
+    read(UserBudget), 
     
     write('What is your preference for animal activity level? (low, moderate, high): '), 
     read(Activity), 
     
-    write('What is your preference for noise? '), 
+    write('What is your preference for noise? (low, moderate, high)'), 
     read(Noise), 
+    
+    write('What is your preference for the amount of maintenance and care required? (low, moderate, high)'), 
+    read(Maintenance),
 
-    findall(Pet, recommend_pet(Classification, Size, Lifespan, Livingspace, Budget, Activity, Noise, Pet), Pets),
+    findall(Pet, recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet), Pets),
     write('Based on your preferences, these pets are recommended: '),
     write(Pets).
 
-get_budget(Cost, cheap) :- Cost < 100.
-get_budget(Cost, expensive) :- Cost >= 100.
 
-get_lifespan(Years, lessthan0) :- Years =< 0.
-get_lifespan(Years, Lifespan) :- Years >= 1, Lifespan = greaterthan1.
-get_lifespan(Years, Lifespan) :- Years >= 3, Lifespan = greaterthan3.
-get_lifespan(Years, Lifespan) :- Years >= 7, Lifespan = greaterthan7.
-get_lifespan(Years, Lifespan) :- Years >= 10, Lifespan = greaterthan10.
-get_lifespan(Years, Lifespan) :- Years >= 13, Lifespan = greaterthan13.
 
+
+% Start the program
 :- start.
