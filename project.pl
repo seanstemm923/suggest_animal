@@ -182,6 +182,6 @@ main :-
     findall(Pet, recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet), Duplicates),
     sort(Duplicates, Pets),
     write('Based on your preferences, these pets are recommended: '),
-    write(Pets).
+    write(Pets), nl.
 
 :- main.
