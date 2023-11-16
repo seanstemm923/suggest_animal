@@ -155,10 +155,10 @@ main :-
     writeln('Write a period after each input. If an option is (amphibian) for example, input: amphibian.'), 
     writeln('If you have no preference for a question, input: n. The less preferences you have, the higher likelihood of getting results'), 
     
-    write('Type what classification of animal you are interested in (n, amphibian, bird, fish, mammal, reptile): '),
+    write('Type what classification of animal you are interested in (no, amphibian, bird, fish, mammal, reptile): '),
     read(Classification), 
     
-    write('Type what size of animal you are interested in (n, small, medium, large): '), 
+    write('Type what size of animal you are interested in (no, small, medium, large): '), 
     read(Size), 
     
     write('What are the minimum number of years you wish to spend with your future pet? (n, *integer*)'), 
@@ -180,8 +180,9 @@ main :-
     read(Maintenance),
 
     findall(Pet, recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet), Duplicates),
-    sort(Duplicates, Pets),
+	sort(Duplicates, Pets),
+    (Pets = [] -> writeln('Sorry, there were no matches found.');
     write('Based on your preferences, these pets are recommended: '),
-    write(Pets), nl.
+    write(Pets)), nl.
 
 :- main.
