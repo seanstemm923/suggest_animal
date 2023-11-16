@@ -45,6 +45,30 @@ pet(green_tiger_barb, fish, small, average_lifespan(7), [indoor], cheap, high, m
 pet(black_molly, fish, small, average_lifespan(5), [indoor], cheap, moderate, moderate, low).
 
 
+/*Birds*/
+
+pet(budgerigar, bird, small, average_lifespan(7), [indoor], cheap, high, moderate, moderate).
+pet(cockatiel, bird, small, average_lifespan(15), [indoor], cheap, moderate, moderate, moderate).
+pet(lovebird, bird, small, average_lifespan(10), [indoor], cheap, high, moderate, moderate).
+pet(canary, bird, small, average_lifespan(10), [indoor], cheap, moderate, low, low).
+pet(african_grey_parrot, bird, medium, average_lifespan(50), [indoor], expensive, high, high, high).
+pet(finch, bird, small, average_lifespan(7), [indoor], cheap, moderate, low, low).
+pet(macaw, bird, large, average_lifespan(50), [indoor], expensive, high, high, high).
+pet(conure, bird, small, average_lifespan(20), [indoor], expensive, high, moderate, moderate).
+pet(amazon_parrot, bird, medium, average_lifespan(40), [indoor], expensive, high, high, high).
+pet(quaker_parakeet, bird, small, average_lifespan(20), [indoor], cheap, high, moderate, moderate).
+pet(cockatoo, bird, medium, average_lifespan(40), [indoor], expensive, high, high, high).
+pet(pigeon, bird, medium, average_lifespan(15), [indoor, outdoor], cheap, low, moderate, moderate).
+pet(dove, bird, medium, average_lifespan(15), [indoor, outdoor], cheap, low, low, low).
+pet(pionus, bird, medium, average_lifespan(25), [indoor], expensive, moderate, moderate, moderate).
+pet(lorikeet, bird, small, average_lifespan(20), [indoor], expensive, high, high, moderate).
+pet(eclectus_parrot, bird, medium, average_lifespan(30), [indoor], expensive, moderate, high, moderate).
+pet(rosella, bird, medium, average_lifespan(15), [indoor], expensive, high, moderate, moderate).
+pet(mynah_bird, bird, medium, average_lifespan(12), [indoor], expensive, high, moderate, moderate).
+pet(indian_ringneck_parakeet, bird, medium, average_lifespan(30), [indoor], expensive, high, moderate, moderate).
+pet(senegal_parrot, bird, small, average_lifespan(25), [indoor], expensive, moderate, moderate, moderate).
+
+
 /*Mammals*/
 
 	/*Types of dogs*/
