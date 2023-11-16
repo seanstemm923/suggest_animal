@@ -163,13 +163,11 @@ pet(snapping_turtle, reptile, large, average_lifespan(30), [indoor, outdoor], ch
 pet(tegu, reptile, large, average_lifespan(15), [indoor, outdoor], expensive, high, high, moderate).
 pet(uromastyx, reptile, medium, average_lifespan(15), [indoor], cheap, low, moderate, low).
 
-% Utility predicate to ask for continuation or termination
 continue_or_end :-
     writeln('Do you want to continue? (yes/no): '),
     read(Continue),
     (Continue = no -> writeln('Program terminated.'), abort ; Continue = yes ->  main).
 
-% Recommendation rule
 recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet) :-
     pet(Pet, PetClassification, PetSize, average_lifespan(AvgLifespan), PetLivingspaces, PetBudget, PetActivity, PetNoise, PetMaintenance),
     (Classification = n ; Classification = PetClassification),
@@ -181,7 +179,6 @@ recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Ac
     (Noise = n ; Noise = PetNoise),
     (Maintenance = n ; Maintenance = PetMaintenance).
 
-% Start of program
 main :-
     writeln('If you have no preference for a question, input: n. The less preferences you have, the higher likelihood of getting results'), 
     
