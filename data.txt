@@ -47,7 +47,7 @@ animal(black_molly, small, greaterthan3, aquarium, low, moderate, moderate, low)
 
 /*Mammals*/
 
-/*Types of dogs*/
+	/*Types of dogs*/
 
 animal(labrador_retriever, medium, greaterthan10, indoor_outdoor, high, high, moderate, moderate).
 animal(german_shepherd, large, greaterthan10, indoor_outdoor, high, high, high, high).
@@ -70,7 +70,7 @@ animal(cavalier_king_charles_spaniel, small, greaterthan10, indoor, moderate, mo
 animal(shetland_sheepdog, small, greaterthan10, indoor_outdoor, moderate, high, moderate, moderate).
 animal(bernese_mountain_dog, large, greaterthan7, indoor_outdoor, high, moderate, high, low).
 
-/* Types of Cats */
+	/* Types of Cats */
 
 animal(siamese_cat, medium, greaterthan10, indoor, moderate, high, moderate, high).
 animal(persian_cat, medium, greaterthan10, indoor, high, low, high, low).
