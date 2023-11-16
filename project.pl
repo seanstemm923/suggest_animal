@@ -161,19 +161,19 @@ recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Ac
 main :-
     writeln('If you have no preference for a question, input: n. The less preferences you have, the higher likelihood of getting results'), 
     
-    write('Type what classification of animal you are interested in (n, amphibian, bird, fish, mammal, reptile): '),
+    write('What type of animal you are interested in? (n, amphibian, bird, fish, mammal, reptile): '),
     read(Classification), 
     
-    write('Type what size of animal you are interested in (n, small, medium, large): '), 
+    write('What size animal you are interested in? (n, small, medium, large): '), 
     read(Size), 
     
-    write('What are the minimum number of years you wish to spend with your future pet? (n, *integer*)'), 
+    write('What are the minimum number of years you wish to spend with your future pet? (n, *1-99*)'), 
     read(UserMinLifespan), 
     
     write('Do you want an indoor or outdoor pet? (n, indoor, outdoor '), 
     read(Livingspace), 
     
-    write('What is your budget in amount of dollars: (n, integer)'), 
+    write('What is your budget in dollars for initial cost of a pet?: (n, 0 - 999999)'), 
     read(UserBudget), 
     
     write('What is your preference for animal activity level? (n, low, moderate, high): '), 
@@ -187,8 +187,8 @@ main :-
 
     findall(Pet, recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet), Duplicates),
 	sort(Duplicates, Pets),
-    (Pets = [] -> writeln('Sorry, there were no matches found.');
+    (Pets = [] -> nl, writeln('Sorry, there were no matches found.'), nl;
     write('Based on your preferences, these pets are recommended: '),
-    write(Pets)), nl, continue_or_end, nl.
+    write(Pets)), nl, nl, continue_or_end, nl.
 
 :- main.
