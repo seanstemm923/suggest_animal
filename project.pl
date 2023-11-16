@@ -140,11 +140,11 @@ pet(uromastyx, reptile, medium, average_lifespan(15), [indoor], moderate, low, m
 
 % Recommendation rule
 recommend_pet(Classification, Size, UserMinLifespan, Livingspace, UserBudget, Activity, Noise, Maintenance, Pet) :-
-    pet(Pet, PetClassification, PetSize, average_lifespan(AvgLifespan), PetLivingspace, PetBudget, PetActivity, PetNoise, PetMaintenance),
+    pet(Pet, PetClassification, PetSize, average_lifespan(AvgLifespan), PetLivingspaces, PetBudget, PetActivity, PetNoise, PetMaintenance),
     (Classification = n ; Classification = PetClassification),
     (Size = n ; Size = PetSize),
     (UserMinLifespan = n ; number(UserMinLifespan), AvgLifespan >= UserMinLifespan),
-    (Livingspace = n ; Livingspace = PetLivingspace),
+    (Livingspace = n ; member(Livingspace, PetLivingspaces)),
     (UserBudget = n ; number(UserBudget), UserBudget >= 100 ; PetBudget = cheap),
     (Activity = n ; Activity = PetActivity),
     (Noise = n ; Noise = PetNoise),
