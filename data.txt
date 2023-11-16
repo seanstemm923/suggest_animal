@@ -47,8 +47,52 @@ animal(black_molly, small, greaterthan3, aquarium, low, moderate, moderate, low)
 
 /*Mammals*/
 
-animal(domestic_dog, medium, greaterthan10, indoor_outdoor, moderate, high, moderate, moderate).
-animal(domestic_cat, medium, greaterthan10, indoor_outdoor, moderate, moderate, moderate, moderate).
+/*Types of dogs*/
+
+animal(labrador_retriever, medium, greaterthan10, indoor_outdoor, high, high, moderate, moderate).
+animal(german_shepherd, large, greaterthan10, indoor_outdoor, high, high, high, high).
+animal(golden_retriever, large, greaterthan10, indoor_outdoor, high, high, moderate, moderate).
+animal(french_bulldog, small, greaterthan10, indoor, moderate, low, moderate, low).
+animal(beagle, medium, greaterthan10, indoor_outdoor, moderate, high, moderate, high).
+animal(bulldog, medium, greaterthan7, indoor, high, low, high, moderate).
+animal(poodle, medium, greaterthan10, indoor_outdoor, high, high, high, low).
+animal(rottweiler, large, greaterthan10, indoor_outdoor, high, high, high, high).
+animal(yorkshire_terrier, small, greaterthan10, indoor, moderate, moderate, high, moderate).
+animal(boxer, large, greaterthan10, indoor_outdoor, high, high, moderate, moderate).
+animal(dachshund, small, greaterthan10, indoor, moderate, moderate, moderate, moderate).
+animal(siberian_husky, large, greaterthan10, indoor_outdoor, high, high, high, high).
+animal(great_dane, large, greaterthan7, indoor_outdoor, high, moderate, moderate, high).
+animal(doberman_pinscher, large, greaterthan10, indoor_outdoor, high, high, high, high).
+animal(shih_tzu, small, greaterthan10, indoor, low, moderate, high, low).
+animal(australian_shepherd, medium, greaterthan10, indoor_outdoor, high, high, moderate, moderate).
+animal(miniature_schnauzer, small, greaterthan10, indoor, moderate, high, moderate, moderate).
+animal(cavalier_king_charles_spaniel, small, greaterthan10, indoor, moderate, moderate, moderate, low).
+animal(shetland_sheepdog, small, greaterthan10, indoor_outdoor, moderate, high, moderate, moderate).
+animal(bernese_mountain_dog, large, greaterthan7, indoor_outdoor, high, moderate, high, low).
+
+/* Types of Cats */
+
+animal(siamese_cat, medium, greaterthan10, indoor, moderate, high, moderate, high).
+animal(persian_cat, medium, greaterthan10, indoor, high, low, high, low).
+animal(maine_coon, large, greaterthan10, indoor, high, moderate, moderate, low).
+animal(ragdoll, large, greaterthan10, indoor, moderate, low, moderate, low).
+animal(bengal_cat, medium, greaterthan10, indoor, high, high, moderate, high).
+animal(sphynx_cat, medium, greaterthan10, indoor, moderate, high, high, low).
+animal(british_shorthair, medium, greaterthan10, indoor, moderate, moderate, low, low).
+animal(abyssinian_cat, medium, greaterthan10, indoor, moderate, high, moderate, moderate).
+animal(birman, medium, greaterthan10, indoor, moderate, low, moderate, low).
+animal(oriental_shorthair, medium, greaterthan10, indoor, moderate, high, moderate, moderate).
+animal(american_shorthair, medium, greaterthan10, indoor, moderate, moderate, moderate, low).
+animal(scottish_fold, medium, greaterthan10, indoor, moderate, low, moderate, low).
+animal(norwegian_forest_cat, large, greaterthan10, indoor, high, moderate, moderate, low).
+animal(siberian_cat, large, greaterthan10, indoor, high, moderate, moderate, low).
+animal(russian_blue, medium, greaterthan10, indoor, moderate, low, low, low).
+animal(egyptian_mau, medium, greaterthan10, indoor, moderate, high, moderate, low).
+animal(exotic_shorthair, medium, greaterthan10, indoor, moderate, low, moderate, low).
+animal(himalayan_cat, medium, greaterthan10, indoor, high, low, high, low).
+animal(burmese_cat, medium, greaterthan10, indoor, moderate, high, moderate, low).
+animal(ragamuffin, large, greaterthan10, indoor, moderate, low, moderate, low).
+
 animal(guinea_pig, small, greaterthan3, cage, low, moderate, moderate, low).
 animal(rabbit, medium, greaterthan7, indoor_cage_with_play_area, moderate, high, high, low).
 animal(hamster, small, greaterthan1, cage, low, moderate, low, low).
