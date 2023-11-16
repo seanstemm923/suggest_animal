@@ -1,0 +1,72 @@
+/* Amphibians */
+
+animal(african_dwarf_frog, small, greaterthan5, aquarium, low, moderate, moderate, low).
+animal(american_bullfrog, large, greaterthan7, pond_or_large_aquarium, moderate, moderate, moderate, high).
+animal(axolotl, medium, greaterthan10, aquarium, moderate, low, moderate, low).
+animal(red_eyed_tree_frog, small, greaterthan3, terrarium, low, moderate, moderate, low).
+animal(pacific_tree_frog, small, greaterthan5, terrarium, low, moderate, moderate, moderate).
+animal(oriental_fire_bellied_toad, small, greaterthan10, terrarium_with_water, low, moderate, moderate, moderate).
+animal(blue_poison_dart_frog, small, greaterthan10, terrarium, moderate, moderate, high, low).
+animal(tomato_frog, medium, greaterthan5, terrarium, low, low, moderate, low).
+animal(leopard_frog, medium, greaterthan5, aquarium_or_pond, low, moderate, moderate, moderate).
+animal(spotted_salamander, small, greaterthan20, terrarium, low, low, moderate, low).
+animal(tiger_salamander, large, greaterthan10, terrarium, low, low, moderate, low).
+animal(green_tree_frog, small, greaterthan3, terrarium, low, moderate, moderate, low).
+animal(horned_frog, medium, greaterthan7, terrarium, moderate, low, moderate, low).
+animal(siren, large, greaterthan20, large_aquarium, moderate, low, moderate, low).
+animal(newt, small, greaterthan7, aquarium_or_terrarium, low, moderate, moderate, low).
+animal(barking_tree_frog, medium, greaterthan7, terrarium, low, moderate, moderate, moderate).
+animal(amazon_milk_frog, medium, greaterthan7, terrarium, moderate, moderate, moderate, low).
+animal(glass_frog, small, greaterthan10, terrarium, moderate, moderate, moderate, low).
+animal(surinam_toad, medium, greaterthan7, aquarium, moderate, low, moderate, low).
+animal(budgetts_frog, medium, greaterthan5, terrarium, moderate, moderate, moderate, moderate).
+
+/* Fish */
+
+animal(goldfish, small_to_medium, greaterthan7, aquarium, moderate, moderate, moderate, low).
+animal(betta_fish, small, greaterthan1, aquarium, low, low, moderate, low).
+animal(neon_tetra, small, greaterthan3, aquarium, low, moderate, low, low).
+animal(guppy, small, greaterthan1, aquarium, low, moderate, low, low).
+animal(angelfish, medium, greaterthan7, aquarium, moderate, moderate, moderate, low).
+animal(clownfish, small_to_medium, greaterthan3, saltwater_aquarium, high, moderate, high, low).
+animal(zebrafish, small, greaterthan3, aquarium, low, moderate, low, low).
+animal(oscar, large, greaterthan10, large_aquarium, high, moderate, high, low).
+animal(mollies, small, greaterthan3, aquarium, low, moderate, low, low).
+animal(swordtail, small, greaterthan3, aquarium, low, moderate, low, low).
+animal(discus, medium, greaterthan7, large_aquarium, high, moderate, high, low).
+animal(koi, large, greaterthan13, pond, high, low, moderate, low).
+animal(plecostomus, medium_to_large, greaterthan7, aquarium, moderate, low, moderate, low).
+animal(rainbowfish, medium, greaterthan3, aquarium, moderate, moderate, moderate, low).
+animal(cichlids, medium, greaterthan5, aquarium, moderate, high, high, moderate).
+animal(siamese_algae_eater, small, greaterthan7, aquarium, low, moderate, low, low).
+animal(cherry_barb, small, greaterthan3, aquarium, low, moderate, low, low).
+animal(harlequin_rasbora, small, greaterthan3, aquarium, low, moderate, low, low).
+animal(green_tiger_barb, small, greaterthan5, aquarium, low, high, moderate, low).
+animal(black_molly, small, greaterthan3, aquarium, low, moderate, moderate, low).
+
+
+/*Mammals*/
+
+animal(domestic_dog, medium, greaterthan10, indoor_outdoor, moderate, high, moderate, moderate).
+animal(domestic_cat, medium, greaterthan10, indoor_outdoor, moderate, moderate, moderate, moderate).
+animal(guinea_pig, small, greaterthan3, cage, low, moderate, moderate, low).
+animal(rabbit, medium, greaterthan7, indoor_cage_with_play_area, moderate, high, high, low).
+animal(hamster, small, greaterthan1, cage, low, moderate, low, low).
+animal(ferret, medium, greaterthan7, large_cage_with_play_area, moderate, high, high, moderate).
+animal(chinchilla, small, greaterthan10, cage, moderate, moderate, high, low).
+animal(rat, small, greaterthan3, cage, low, high, moderate, low).
+animal(mouse, small, greaterthan1, cage, low, moderate, low, low).
+animal(hedgehog, small, greaterthan3, cage, moderate, moderate, moderate, low).
+animal(squirrel, small, greaterthan7, large_cage_with_play_area, moderate, high, high, moderate).
+animal(sugar_glider, small, greaterthan10, large_cage_with_play_area, moderate, high, high, moderate).
+animal(miniature_pig, large, greaterthan10, indoor_outdoor, high, moderate, high, moderate).
+animal(gerbil, small, greaterthan3, cage, low, moderate, low, low).
+animal(capybara, large, greaterthan10, large_outdoor_space, high, moderate, high, low).
+animal(degu, small, greaterthan7, cage, low, high, moderate, low).
+animal(skunk, medium, greaterthan10, indoor_outdoor, high, moderate, high, moderate).
+animal(wallaby, large, greaterthan10, large_outdoor_space, high, high, high, moderate).
+animal(pot_bellied_pig, large, greaterthan10, indoor_outdoor, high, moderate, high, moderate).
+animal(prairie_dog, small, greaterthan7, large_cage_with_play_area, moderate, high, high, moderate).
+
+/*Reptiles*/
+
